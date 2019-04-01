@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Юрий Чурсин](https://up.htmlacademy.ru/adaptive/16/user/903271).
-* Наставник: `Неизвестно`.
+* Наставник: [Ксения Торкова].
 
 ---
 
