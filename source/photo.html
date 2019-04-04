@@ -1,10 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+  <title>Фотоприложение Пинк. Фотографии</title>
 </head>
+
 <body>
+
+<header class="page-header">
+  <a href="index.html" class="page-header__logo-image">
+    <img src="http://placehold.it/75x22" alt="Логотип фотоприложения Пинк">
+  </a>
+  
+  <nav class="main-nav">
+    <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <ul class="main-nav__list site-menu">
+      <li class="site-menu__item"><a href="index.html">Главная</a></li>
+      <li class="site-menu__item site-menu__item--active"><a href="photo.html">Фотографии</a></li>
+      <li class="site-menu__item"><a href="form.html">Конкурс</a></li>
+      <li class="site-menu__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="page-main">
+  
+  <div class="page-name_wrapper">
+    <h1 class="page-name">Фотографии
+      пользователей</h1>
+  </div>
+  
+  <section class="content">
+      <h2 class="visually-hidden">Фотографии</h2>
+      <p class="content__slogan">
+        Взгляните на фотографии, которые
+        выкладывают пользователи!
+        Видите, как не хватает ваших?
+      </p>
+    
+      <ul class="content__list">
+        <li class="content__item">
+          <img src="http://placehold.it/panorama" alt="Панорама дня" class="content__photo content__photo--panorama"/>
+          <div class="content__comment">
+            <p class="content__comment-name">Анна<span>(5 минут назад)</span></p>
+            <p class="content__comment-text">
+              Прыгать или нет? Напишите в
+              коментарии свой совет и смотрите
+              прямую трансляцию в перископе,
+              задавайте свои вопросы!</p>
+            <button class="content__comment-like" type="button">Нравится: 215</button>
+          </div>
+        </li>
+      
+        <li class="content__item">
+          <img src="http://placehold.it/photo-1" alt="Фото-1" class="content__photo content__photo--panorama"/>
+          <div class="content__comment">
+            <p class="content__comment-name">Левон<span>(5 часов назад)</span></p>
+            <p class="content__comment-text">
+              Вчера он на луну летал, сегодня в руки
+              к нам попал.</p>
+            <button class="content__comment-like" type="button">Нравится: 356</button>
+          </div>
+        </li>
+      
+        <li class="content__item">
+          <img src="http://placehold.it/photo-2" alt="Фото-1" class="content__photo content__photo--panorama"/>
+          <div class="content__comment">
+            <p class="content__comment-name">Антон<span>(12 часов назад)</span></p>
+            <p class="content__comment-text">
+              Соседи будут рады!</p>
+            <button class="content__comment-like" type="button">Нравится: 666</button>
+          </div>
+        </li>
+      
+        <li class="content__item">
+          <img src="http://placehold.it/photo-3" alt="Фото-1" class="content__photo content__photo--panorama"/>
+          <div class="content__comment">
+            <p class="content__comment-name">Борис <span>(20 часов назад)</span></p>
+            <p class="content__comment-text">
+              Здесь могла быть ваша цитата о
+              высоком и вечном.</p>
+            <button class="content__comment-like" type="button">Нравится: 215</button>
+          </div>
+        </li>
+      
+        <li class="content__item">
+          <img src="http://placehold.it/photo-4" alt="Фото-1" class="content__photo content__photo--panorama"/>
+          <div class="content__comment">
+            <p class="content__comment-name">Сергей<span>(25 часов назад)</span></p>
+            <p class="content__comment-text">
+              Самая кубанская в мире!</p>
+            <button class="content__comment-like" type="button">Нравится: 4</button>
+          </div>
+        </li>
+      
+        <li class="content__item">
+          <img src="http://placehold.it/photo-5" alt="Фото-1" class="content__photo content__photo--panorama"/>
+          <div class="content__comment">
+            <p class="content__comment-name">Максим<span>(40 часов назад)</span></p>
+            <p class="content__comment-text">
+              Где снег-то?</p>
+            <button class="content__comment-like" type="button">Нравится: 150</button>
+          </div>
+        </li>
+      
+        <li class="content__item">
+          <img src="http://placehold.it/photo-6" alt="Фото-1" class="content__photo content__photo--panorama"/>
+          <div class="content__comment">
+            <p class="content__comment-name">Надежда<span>(45 часов назад)</span></p>
+            <p class="content__comment-text">
+              Всем GM и взаимные лайки!</p>
+            <button class="content__comment-like" type="button">Нравится: 2560</button>
+          </div>
+        </li>
+      </ul>
+    
+      <p class="content__slogan">
+        Затмите их всех!
+        Выкладывайте все, что накопилось в
+        телефоне!
+      </p>
+  </section>
+  
+  <section class="photo-post">
+  </section>
+</main>
+
+<footer class="page-footer">
+  
+  <div class="page-footer__logo">
+    <img src="http://placehold.it/logo" alt="Логотип Pink">
+  </div>
+  
+  <div class="page-footer__social social">
+    <ul class="social__list">
+      <li class="social__item">
+        <a class="social__link social__link--twitter" href="#" aria-label="Страница Pink в Твиттере"><img src="http://placehold.it/twitter" alt="Твиттер"></a>
+      </li>
+  
+      <li class="social__item">
+        <a class="social__link social__link--facebook" href="#" aria-label="Страница Pink в Facebook"><img src="http://placehold.it/facebook" alt="Facebook"></a>
+      </li>
+  
+      <li class="social__item">
+        <a class="social__link social__link--youtube" href="#" aria-label="Страница Pink на Youtube"><img src="http://placehold.it/youtube" alt="Youtube"></a>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="page-footer__copyright">
+    <p class="copyright__text">Разработано</p>
+    <a href="https://htmlacademy.ru/intensive/adaptive"
+       class="copyright__link" aria-label="HTML Academy"><img src="source/img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+    </a>
+  </div>
+
+</footer>
 
 </body>
 </html>
