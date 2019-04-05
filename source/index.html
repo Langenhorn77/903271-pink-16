@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8">
   <title>Фотоприложение Пинк</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 </head>
 <body>
 
@@ -24,9 +23,7 @@
 
 
 <main class="page-main">
-  <div class="page-name_wrapper">
     <h1 class="visually-hidden">Фотоприложение "Пинк"</h1>
-  </div>
   <section class="download">
     <h2 class="visually-hidden">Скачать</h2>
     <a href="https://www.apple.com/ru/itunes/" class="download__button btn">Скачать приложение</a>
@@ -71,17 +68,19 @@
     </div>
   </section>
   <section class="reviews">
-    <div class="reviews_wrapper slider">
+    <div class="reviews__wrapper slider">
       <h2 class="visually-hidden">Отзывы</h2>
       <ul class="reviews__list slider__list">
         <li class="reviews__item slider__item">
-          <h3>Николай Петров</h3>
+          <blockquote>
+          <cite>Николай Петров</cite>
           <p>«Это приложение перевернуло мой мир
             и позволило по-новому взглянуть на
             привычные серые вещи! А еще я
             познакомился со своей будущей женой
             в комментариях к выложенной
             фотографии!»</p>
+          </blockquote>
         </li>
       </ul>
       <p class="reviews__toggles slider__toggles">
@@ -96,11 +95,11 @@
       <h2 class="visually-hidden">Купить приложение</h2>
       <ul class="buy__list slider__list">
         <li class="buy__item slider__item">
-          <div class="buy__price">
-            <h3>Стандарт</h3>
-            <p>3,99 USD</p>
-          </div>
           <table class="buy__features">
+            <th class="buy__price">
+              <h3>Стандарт</h3>
+              <p>3,99 USD</p>
+            </th>
             <tr>
               <td class="buy__value">
                 Розовый фильтр
@@ -108,12 +107,16 @@
               <td class="buy__field">
                 <img src="http://placehold.it/yes/31x21" alt="Присутствует">
               </td>
+            </tr>
+            <tr>
               <td class="buy__value">
                 Смайлики
               </td>
               <td class="buy__field">
                 <img src="http://placehold.it/yes/31x21" alt="Присутствует">
               </td>
+            </tr>
+            <tr>
               <td class="buy__value">
                 Комментарии
               </td>
@@ -132,7 +135,7 @@
     </div>
   </section>
   <section class="contacts">
-    <div class="contacts_wrapper">
+    <div class="contacts__wrapper">
       <h2 class="visually-hidden">Контакты</h2>
       <p class="contacts__question">
         Остались вопросы?
@@ -145,7 +148,7 @@
         </li>
         <li class="contacts__item">
           <h3>Пишите:</h3>
-          <a href="#">mail@htmlacademy.ru</a>
+          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </li>
         <li class="contacts__item">
           <h3>Приезжайте в гости:</h3>
