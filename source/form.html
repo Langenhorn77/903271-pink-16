@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Фотоприложение Пинк. Конкурс</title>
+</head>
+<body>
+
+<header class="page-header">
+  <a href="index.html" class="page-header__logo-image">
+    <img src="http://placehold.it/75x22" alt="Логотип фотоприложения Пинк">
+  </a>
+  <nav class="main-nav">
+    <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <ul class="main-nav__list site-menu">
+      <li class="site-menu__item"><a href="index.html">Главная</a></li>
+      <li class="site-menu__item"><a href="photo.html">Фотографии</a></li>
+      <li class="site-menu__item site-menu__item--active"><a>Конкурс</a></li>
+      <li class="site-menu__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<main class="page-main">
+  <div class="page-name">
+    <h1 class="page-name__content">Конкурс на самое
+      безбашенное
+      путешествие с Пинк</h1>
+  </div>
+  <section class="lottery">
+    <h2 class="visually-hidden">Форма для участия в конкурсе</h2>
+    <form action="https://echo.htmlacademy.ru" class="lottery-form" method="post">
+      <p class="lottery-form__desc">
+        Поделитесь своей историей и получите
+        шанс выиграть ценный приз — 1000
+        миль на вашу бонусную карту!
+      </p>
+      <fieldset class="lottery-form__data">
+        <label for="your-surname">
+          <input type="text" id="your-surname" name="your-surname" placeholder="Укажите фамилию *">
+          Фамилия
+        </label>
+        <label for="your-name">
+          <input type="text" id="your-name" name="your-name" placeholder="Введите ваше имя *">
+          Имя
+        </label>
+        <label for="your-patronym">
+          <input type="text" id="your-patronym" name="your-patronym" placeholder="Ну и отчество тоже">
+          Отчество
+        </label>
+      </fieldset>
+      <fieldset class="lottery-form__achievements achievements">
+        <legend>Ваши безбашенные
+          достижения в путешествии
+        </legend>
+        <ul class="achievements__list">
+          <li class="achievements__item">
+            <input type="checkbox" name="selfie" id="selfie" checked>
+            <label for="selfie">
+              Сделал селфи с акулой
+            </label>
+          </li>
+          <li class="achievements__item">
+            <input type="checkbox" name="beach" id="beach" checked>
+            <label for="beach">
+              Обгорел на пляже
+            </label>
+          </li>
+          <li class="achievements__item">
+            <input type="checkbox" name="norris" id="norris">
+            <label for="norris">
+              Видел Чака Норриса
+            </label>
+          </li>
+          <li class="achievements__item">
+            <input type="checkbox" name="souvenir" id="souvenir">
+            <label for="souvenir">
+              Накупил сувениров
+            </label>
+          </li>
+          <li class="achievements__item">
+            <input type="checkbox" name="tower" id="tower" checked>
+            <label for="tower">
+              Удержал башню
+            </label>
+          </li>
+          <li class="achievements__item">
+            <input type="checkbox" name="hotel" id="hotel">
+            <label for="hotel">
+              Разгромил отель
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="lottery-form__info">
+        <label for="your-tel">
+          <input type="tel" id="your-tel" name="your-tel" placeholder="Номер, пожалуйста">
+          Номер телефона
+        </label>
+        <label for="your-mail">
+          <input type="email" id="your-mail" name="your-mail" placeholder="Введите почту *">
+          Адрес почты
+        </label>
+      </fieldset>
+      <fieldset class="lottery-form__app application">
+        <legend>С каким приложением
+          путешествовали?
+        </legend>
+        <ul class="application__list">
+          <li class="application__item">
+            <input type="radio" name="pink" id="ios" checked>
+            <label for="ios">
+              Pink для iOS
+            </label>
+          </li>
+          <li class="application__item">
+            <input type="radio" name="pink" id="android">
+            <label for="android">
+              Pink на Android
+            </label>
+          </li>
+          <li class="application__item">
+            <input type="radio" name="pink" id="wp">
+            <label for="wp">
+              Windows Phone
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="lottery-form__report">
+        <legend>Опишите свои эмоции</legend>
+        <textarea name="report_us" id="report_us" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+      </fieldset>
+      <button type="submit" class="lottery-form__button btn">Отправить форму</button>
+      <p class="lottery-form__legend">* — обязательные поля</p>
+    </form>
+  </section>
+</main>
+
+<footer class="page-footer">
+  <div class="page-footer__logo">
+    <img src="http://placehold.it/logo" alt="Логотип Pink">
+  </div>
+  <div class="page-footer__social social">
+    <ul class="social__list">
+      <li class="social__item">
+        <a class="social__link social__link--twitter" href="#" aria-label="Страница Pink в Твиттере"><img
+          src="http://placehold.it/twitter" alt="Твиттер"></a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--facebook" href="#" aria-label="Страница Pink в Facebook"><img
+          src="http://placehold.it/facebook" alt="Facebook"></a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--youtube" href="#" aria-label="Страница Pink на Youtube"><img
+          src="http://placehold.it/youtube" alt="Youtube"></a>
+      </li>
+    </ul>
+  </div>
+  <div class="page-footer__copyright copyright">
+    <p class="copyright__text">Разработано</p>
+    <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link" aria-label="HTML Academy"><img
+      src="source/img/htmlacademy.svg" width="27" height="34" alt="HTML Academy"/>
+    </a>
+  </div>
+</footer>
+</body>
+</html>
