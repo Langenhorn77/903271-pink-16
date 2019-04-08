@@ -1,0 +1,24 @@
+.about-app {
+  min-height: 248px;
+}
+.about-app__slogan {
+  font-family: "Open Sans Light", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+}
+.about-app__list {
+  list-style: none;
+  padding: 0;
+  width: 280px;
+  background-color: #f2f2f2;
+}
+.about-app__item h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.about-app__item p {
+  font-size: 14px;
+  line-height: 24px;
+}
+/*# sourceMappingURL=about-app.css.map */

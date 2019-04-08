@@ -1,0 +1,19 @@
+.reviews__list {
+  list-style: none;
+  text-align: center;
+}
+.reviews__item cite {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.reviews__item p {
+  font-size: 14px;
+  line-height: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/*# sourceMappingURL=reviews.css.map */

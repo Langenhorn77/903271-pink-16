@@ -1,0 +1,323 @@
+.page-header {
+  background-color: #283645;
+}
+.site-menu {
+  list-style: none;
+  padding: 0;
+}
+.site-menu__item {
+  color: #ffffff;
+}
+.site-menu__item a {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  box-sizing: border-box;
+  width: 320px;
+  height: 63px;
+  padding-top: 16px;
+  margin-top: 1px;
+  box-shadow: 0 1px 0 0 #000001, inset 0 1px 0 0 #485461;
+}
+.page-name {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  height: 237px;
+  /*временно*/
+}
+.page-name__content {
+  font-family: "Open Sans Light", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  width: 280px;
+  padding-top: 102px;
+}
+.download {
+  background-color: #1d2631;
+  min-height: 271px;
+}
+.download__button {
+  display: block;
+  width: 289px;
+  height: 63px;
+  padding: 17px;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-decoration: none;
+  border: 3px solid;
+  border-radius: 30px;
+}
+.download__text {
+  font-family: "Open Sans Light", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  text-align: center;
+  width: 280px;
+}
+.about-app {
+  min-height: 248px;
+  text-align: center;
+}
+.about-app__slogan {
+  font-family: "Open Sans Light", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+}
+.about-app__list {
+  list-style: none;
+  padding: 0;
+  background-color: #f2f2f2;
+  margin: 0;
+}
+.about-app__item {
+  min-height: 139px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.about-app__item h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.about-app__item p {
+  font-size: 14px;
+  line-height: 24px;
+  width: 280px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.about-app__image {
+  background-color: #f2f2f2;
+  margin: 0;
+  margin-top: -15px;
+}
+.reviews {
+  margin: 0;
+  padding-top: 50px;
+}
+.reviews__list {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+.reviews__item blockquote {
+  margin-left: auto;
+  margin-right: auto;
+}
+.reviews__item cite {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+}
+.reviews__item p {
+  font-size: 14px;
+  line-height: 30px;
+}
+.contacts {
+  font-family: "Open Sans Light", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  min-height: 645px;
+}
+.contacts__wrapper {
+  background-color: #ffffff;
+}
+.contacts__question {
+  margin-bottom: 38px;
+}
+.contacts__list {
+  list-style: none;
+  padding: 0;
+  min-height: 395px;
+}
+.contacts__item {
+  margin-bottom: 28px;
+}
+.contacts__item h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  margin-bottom: 14px;
+}
+.contacts__item a {
+  text-decoration: none;
+  color: #d22856;
+}
+.content__slogan {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  padding-top: 49px;
+  padding-bottom: 32px;
+}
+.photo-card {
+  background-color: #f2f2f2;
+  width: 280px;
+  font-size: 14px;
+  line-height: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+.photo-card__comment {
+  padding: 25px 20px 0 17px;
+  margin: 0;
+}
+.photo-card__comment-name {
+  font-weight: 700;
+  font-style: normal;
+}
+.photo-card__comment-name span {
+  font-family: "Open Sans Light", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.photo-card__comment-like {
+  font-size: 12px;
+  color: #d22856;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 49px;
+  margin-bottom: 30px;
+}
+.page-footer {
+  display: flex;
+  flex-direction: column;
+}
+.social__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.copyright {
+  display: flex;
+  justify-content: space-between;
+}
+.lottery-form legend {
+  font-size: 14px;
+  line-height: 30px;
+  color: #d22856;
+  text-transform: uppercase;
+}
+.lottery-form__desc {
+  font-size: 14px;
+  line-height: 30px;
+}
+.lottery-form__data {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+.lottery-form__data label,
+.lottery-form__info label {
+  font-size: 14px;
+  line-height: 30px;
+  color: #d22856;
+  text-transform: uppercase;
+}
+.lottery-form__data input::placeholder,
+.lottery-form__info input::placeholder,
+.lottery-form__report textarea::placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+}
+.lottery-form__achievements,
+.lottery-form__app {
+  background-color: #f2f2f2;
+  border: none;
+}
+.lottery-form__info {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+.lottery-form__report {
+  border: none;
+}
+.lottery-form__legend {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.lottery-form__legend span {
+  color: #d22856;
+}
+.achievements__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.achievements__item {
+  margin-bottom: 65px;
+}
+.application__list {
+  list-style: none;
+  padding: 0;
+}
+.application__item {
+  margin-bottom: 58px;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff"), url("../fonts/opensans.woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensansbold.woff"), url("../fonts/opensansbold.woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans Light";
+  src: url("../fonts/opensanslight.woff"), url("../fonts/opensanslight.woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #283645;
+  width: 320px;
+  /*потом удалить*/
+  margin: 0;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.btn {
+  width: 280px;
+  vertical-align: center;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
