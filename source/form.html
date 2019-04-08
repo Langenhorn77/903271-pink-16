@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Фотоприложение Пинк. Конкурс</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -37,18 +38,12 @@
         миль на вашу бонусную карту!
       </p>
       <fieldset class="lottery-form__data">
-        <label for="your-surname">
+        <label for="your-surname">Фамилия</label>
           <input type="text" id="your-surname" name="your-surname" placeholder="Укажите фамилию *">
-          Фамилия
-        </label>
-        <label for="your-name">
+        <label for="your-name">Имя</label>
           <input type="text" id="your-name" name="your-name" placeholder="Введите ваше имя *">
-          Имя
-        </label>
-        <label for="your-patronym">
+        <label for="your-patronym">Отчество</label>
           <input type="text" id="your-patronym" name="your-patronym" placeholder="Ну и отчество тоже">
-          Отчество
-        </label>
       </fieldset>
       <fieldset class="lottery-form__achievements achievements">
         <legend>Ваши безбашенные
@@ -94,14 +89,10 @@
         </ul>
       </fieldset>
       <fieldset class="lottery-form__info">
-        <label for="your-tel">
+        <label for="your-tel">Номер телефона</label>
           <input type="tel" id="your-tel" name="your-tel" placeholder="Номер, пожалуйста">
-          Номер телефона
-        </label>
-        <label for="your-mail">
+        <label for="your-mail">Адрес почты</label>
           <input type="email" id="your-mail" name="your-mail" placeholder="Введите почту *">
-          Адрес почты
-        </label>
       </fieldset>
       <fieldset class="lottery-form__app application">
         <legend>С каким приложением
@@ -132,8 +123,8 @@
         <legend>Опишите свои эмоции</legend>
         <textarea name="report_us" id="report_us" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       </fieldset>
-      <button type="submit" class="lottery-form__button btn">Отправить форму</button>
-      <p class="lottery-form__legend">* — обязательные поля</p>
+      <button type="submit" class="lottery-form__button">Отправить форму</button>
+      <p class="lottery-form__legend"><span>*</span> — обязательные поля</p>
     </form>
   </section>
 </main>
