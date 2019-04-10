@@ -1,3 +1,39 @@
+body {
+  font-family: "Open Sans", "Tahoma", sans-serif;
+  font-weight: 400;
+  color: #283645;
+  width: 320px;
+  /*потом удалить*/
+  margin: 0;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensanslight.woff2"), url("../fonts/opensanslight.woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff2"), url("../fonts/opensans.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensansbold.woff2"), url("../fonts/opensansbold.woff");
+  font-weight: 700;
+  font-style: normal;
+}
 .page-header {
   background-color: #283645;
 }
@@ -25,13 +61,12 @@
   box-shadow: 0 1px 0 0 #000001, inset 0 1px 0 0 #485461;
 }
 .page-name {
-  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
   height: 237px;
   /*временно*/
 }
 .page-name__content {
-  font-family: "Open Sans Light", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 24px;
   line-height: 24px;
   color: #ffffff;
@@ -59,7 +94,7 @@
   border-radius: 30px;
 }
 .download__text {
-  font-family: "Open Sans Light", sans-serif;
+  font-weight: 300;
   font-size: 14px;
   line-height: 24px;
   color: #ffffff;
@@ -71,7 +106,7 @@
   text-align: center;
 }
 .about-app__slogan {
-  font-family: "Open Sans Light", sans-serif;
+  font-weight: 300;
   font-size: 24px;
   line-height: 24px;
 }
@@ -129,11 +164,11 @@
   line-height: 30px;
 }
 .contacts {
-  font-family: "Open Sans Light", sans-serif;
+  font-weight: 300;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
-  background-image: url("../img/bg-map-mobile@1x.png");
+  background-image: url("../../img/bg-map-mobile@1x.png");
   min-height: 645px;
 }
 .contacts__wrapper {
@@ -151,7 +186,6 @@
   margin-bottom: 28px;
 }
 .contacts__item h3 {
-  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
@@ -186,8 +220,7 @@
   font-style: normal;
 }
 .photo-card__comment-name span {
-  font-family: "Open Sans Light", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 12px;
   text-transform: uppercase;
 }
@@ -279,45 +312,9 @@
 .application__item {
   margin-bottom: 58px;
 }
-@font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/opensans.woff"), url("../fonts/opensans.woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/opensansbold.woff"), url("../fonts/opensansbold.woff2");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Open Sans Light";
-  src: url("../fonts/opensanslight.woff"), url("../fonts/opensanslight.woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-body {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  color: #283645;
-  width: 320px;
-  /*потом удалить*/
-  margin: 0;
-}
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 .btn {
   width: 280px;
-  vertical-align: center;
+  vertical-align: middle;
   text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
