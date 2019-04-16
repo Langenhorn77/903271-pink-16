@@ -9,6 +9,11 @@
   line-height: 24px;
 }
 
+.about-app__slogan p {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .about-app__list {
   list-style: none;
   padding: 0;
@@ -22,7 +27,7 @@
   margin-left: auto;
 }
 
-.about-app__item h3 {
+.about-app h3 {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -30,7 +35,7 @@
   margin-left: auto;
 }
 
-.about-app__item p {
+.about-app p {
   font-size: 14px;
   line-height: 24px;
   width: 280px;
@@ -42,4 +47,76 @@
   background-color: #f2f2f2;
   margin: 0;
   margin-top: -15px;
+}
+
+.about-app__effect {
+  display: none;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: start;
+}
+
+.about-app__effect a {
+  color: #d22856;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+@media (min-width: @tablet-width) {
+  .about-app h3 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .about-app__slogan p {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .about-app__slogan p:nth-child(1) {
+    width: 600px;
+  }
+
+  .about-app__slogan p:nth-child(2) {
+    width: 340px;
+  }
+
+  .about-app__effect {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about-app h3 {
+    line-height: 30px;
+  }
+
+  .about-app p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .about-app__slogan p {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .about-app__slogan p:nth-child(1) {
+    width: 750px;
+  }
+
+  .about-app__slogan p:nth-child(2) {
+    width: 450px;
+  }
+
+  .about-app__effect {
+    margin-left: 130px;
+    margin-right: 130px;
+  }
+
+  .about-app__effect a {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

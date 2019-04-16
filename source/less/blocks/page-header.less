@@ -1,3 +1,22 @@
 .page-header {
-  background-color: #283645;
+  height: 66px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    height: 110px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    height: 110px;
+    padding-left: 132px;
+    padding-right: 132px;
+  }
 }

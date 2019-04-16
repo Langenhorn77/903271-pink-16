@@ -1,4 +1,25 @@
 .page-footer {
-  display: flex;
-  flex-direction: column;
+  padding: 40px 71px;
+  width: 320px;
+  box-sizing: border-box;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    width: 660px;
+    display: flex;
+    justify-content: space-between;
+    padding: 36px 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+    padding: 98px 0 72px 0;
+    margin-left: 130px;
+    margin-right: 130px;
+  }
 }

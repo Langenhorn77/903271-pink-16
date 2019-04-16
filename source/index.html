@@ -8,28 +8,29 @@
 </head>
 <body>
 
-<header class="page-header">
-  <a class="page-header__logo-image">
-    <img src="http://placehold.it/75x22" alt="Логотип фотоприложения Пинк">
-  </a>
-  <nav class="main-nav">
-    <button class="main-nav__toggle" type="button">Открыть меню</button>
-    <ul class="main-nav__list site-menu">
-      <li class="site-menu__item site-menu__item--active"><a>Главная</a></li>
-      <li class="site-menu__item"><a href="photo.html">Фотографии</a></li>
-      <li class="site-menu__item"><a href="form.html">Конкурс</a></li>
-      <li class="site-menu__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
-    </ul>
-  </nav>
-</header>
-
-
-<main class="page-main">
-  <div class="page-name">
+<div class="page-wrapper">
+  <header class="page-header">
+    <a class="page-header__logo-image">
+      <img src="http://placehold.it/75x22" alt="Логотип фотоприложения Пинк">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <ul class="main-nav__list site-menu">
+        <li class="site-menu__item site-menu__item&#45;&#45;active"><a>Главная</a></li>
+        <li class="site-menu__item"><a href="photo.html">Фотографии</a></li>
+        <li class="site-menu__item"><a href="form.html">Конкурс</a></li>
+        <li class="site-menu__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div>
     <h1 class="visually-hidden">Фотоприложение "Пинк"</h1>
   </div>
   <section class="download">
     <h2 class="visually-hidden">Скачать</h2>
+    <p class="download__slogan">Взгляните
+      на жизнь
+      иначе!</p>
     <a href="https://www.apple.com/ru/itunes/" class="download__button btn">Скачать приложение</a>
     <div class="download__icons">
       <a href="#"><img src="http://placehold.it/apple-logo/47x56" alt="Иконка Apple"></a>
@@ -39,6 +40,9 @@
     <p class="download__text">Доступно для iPhone, iPad, Android,
       Windows Phone, OS X, Windows 8</p>
   </section>
+</div>
+
+<main class="page-main">
   <section class="about-app">
     <h2 class="visually-hidden">О продукте</h2>
     <div class="about-app__slogan">
@@ -69,6 +73,15 @@
     </ul>
     <div class="about-app__image">
       <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Смартфон">
+    </div>
+    <div class="about-app__effect">
+      <img src="http://placehold.it/clock/298x345" alt="24 часа">
+      <div class="about-app__wrapper">
+        <h3>Эффект на 24 часа!</h3>
+        <p>Британские ученые провели исследования и доказали,
+          что положительный эффект от использования приложения длится целые сутки!</p>
+        <a href="#">Узнать больше об исследовании</a>
+      </div>
     </div>
   </section>
   <section class="reviews">

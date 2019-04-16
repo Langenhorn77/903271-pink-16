@@ -1,6 +1,10 @@
 .page-name {
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   height: 237px; /*временно*/
+  width: 320px;
+  padding-top: 102px;
+  padding-bottom: 87px;
+  box-sizing: border-box;
 }
 
 .page-name__content {
@@ -11,5 +15,48 @@
   text-align: center;
   margin: 0;
   width: 280px;
-  padding-top: 102px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .page-name {
+    height: 440px;
+    width: 660px;
+    padding-top: 190px;
+    padding-bottom: 150px;
+  }
+
+  .page-name__content {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .page-name__content--photo {
+    width: 360px;
+  }
+
+  .page-name__content--form {
+    width: 480px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-name {
+    height: 395px;
+    width: 1200px;
+  }
+
+  .page-name__content {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .page-name__content--photo {
+    width: 360px;
+  }
+
+  .page-name__content--form {
+    width: 750px;
+  }
 }

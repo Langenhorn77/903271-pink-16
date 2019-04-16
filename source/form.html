@@ -22,13 +22,13 @@
   </nav>
 </header>
 
+<div class="page-name">
+  <h1 class="page-name__content page-name__content--form">Конкурс на самое
+    безбашенное
+    путешествие с Пинк</h1>
+</div>
 
 <main class="page-main">
-  <div class="page-name">
-    <h1 class="page-name__content">Конкурс на самое
-      безбашенное
-      путешествие с Пинк</h1>
-  </div>
   <section class="lottery">
     <h2 class="visually-hidden">Форма для участия в конкурсе</h2>
     <form action="https://echo.htmlacademy.ru" class="lottery-form" method="post">
@@ -123,8 +123,9 @@
         <legend>Опишите свои эмоции</legend>
         <textarea name="report_us" id="report_us" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       </fieldset>
-      <button type="submit" class="lottery-form__button">Отправить форму</button>
-      <p class="lottery-form__legend"><span>*</span> — обязательные поля</p>
+      <div class="lottery-form__wrapper">
+        <button type="submit" class="lottery-form__button">Отправить форму</button>
+        <p class="lottery-form__legend"><span>*</span> — обязательные поля</p></div>
     </form>
   </section>
 </main>
