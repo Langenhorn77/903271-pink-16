@@ -1,10 +1,12 @@
 .contacts {
   font-weight: 300;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 29px;
   text-align: center;
   background-image: url("../../img/bg-map-mobile@1x.png");
   min-height: 645px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contacts__wrapper {
@@ -13,12 +15,17 @@
 
 .contacts__question {
   margin-bottom: 38px;
+  width: 225px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contacts__list {
   list-style: none;
   padding: 0;
   min-height: 395px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contacts__item {
@@ -28,11 +35,68 @@
 .contacts__item h3 {
   font-size: 18px;
   font-weight: 700;
-  line-height: 18px;
+  line-height: 22px;
   margin-bottom: 14px;
 }
 
 .contacts__item a {
   text-decoration: none;
   color: #d22856;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    min-height: 780px;
+    background-image: url("../../img/bg-map-tablet@1x.jpg");
+  }
+
+  .contacts__question {
+    font-size: 40px;
+    line-height: 48px;
+    width: 370px;
+  }
+
+  .contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 560px;
+  }
+
+  .contacts__item {
+    width: 250px;
+  }
+
+  .contacts__list:nth-child(3) {
+    justify-content: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    min-height: 868px;
+    background-image: url("../../img/bg-map-desktop@1x.jpg");
+  }
+
+  .contacts__question {
+    font-size: 50px;
+    line-height: 60px;
+    width: 465px;
+  }
+
+  .contacts__list {
+    width: 865px;
+  }
+
+  .contacts__item--phone {
+    order: 1;
+  }
+
+  .contacts__item--mail {
+    order: 3;
+  }
+
+  .contacts__item--adress {
+    order: 2;
+  }
 }

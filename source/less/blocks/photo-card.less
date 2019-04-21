@@ -42,15 +42,21 @@
   width: 100%;
 }
 
-.photo-card__wrapper--panorama {
+.photo-card__wrapper {
   background-color: #f2f2f2;
-  margin-left: 20px;
-  margin-right: 20px;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-card__wrapper {
+    width: 620px;
+  }
 }
 
 @media (min-width: @desktop-width) {
-  .photo-card__wrapper--panorama {
-    margin-left: 130px;
-    margin-right: 130px;
+  .photo-card__wrapper {
+    width: 940px;
   }
 }

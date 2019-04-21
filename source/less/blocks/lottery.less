@@ -4,10 +4,12 @@
 }
 
 .lottery-form legend {
+  display: table;
   font-size: 14px;
   line-height: 30px;
   color: #d22856;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .lottery-form__desc {
@@ -18,14 +20,18 @@
   margin: 55px auto;
 }
 
+
 .lottery-form__data,
 .lottery-form__info {
   display: flex;
   flex-direction: column;
   border: none;
-  padding: 0;
-  margin-left: 20px;
-  margin-right: 20px;
+  width: 320px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .lottery-form__data input,
@@ -57,18 +63,35 @@
 .lottery-form__app {
   background-color: #f2f2f2;
   border: none;
-}
-
-.lottery-form__report {
-  border: none;
-  margin-left: 20px;
-  margin-right: 20px;
+  width: 320px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
 }
 
+.lottery-form__report {
+  width: 320px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+}
+
 .lottery-form__report textarea {
-  width: 276px;
+  width: 280px;
   height: 197px;
+}
+
+.lottery-form__wrapper {
+  width: 320px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .lottery-form__button {
@@ -82,7 +105,8 @@
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
-  margin: 48px 20px 45px 20px;
+  margin-top: 48px;
+  margin-bottom: 45px;
 }
 
 .lottery-form__legend {
@@ -117,16 +141,17 @@
     flex-direction: row;
     flex-wrap: wrap;
     order: 1;
+    width: 620px;
   }
 
   .lottery-form__data input {
-    width: 529px;
+    width: 521px;
     margin-left: 100px;
     margin-bottom: 56px;
   }
 
   .lottery-form__data input:nth-child(4) {
-    width: 569px;
+    width: 561px;
     margin-left: 60px;
   }
 
@@ -138,14 +163,14 @@
     order: 2;
     border: #e5e5e5 2px solid;
     background-color: #ffffff;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 620px;
   }
 
   .lottery-form__info {
     order: 3;
     border: #e5e5e5 2px solid;
     margin-top: 65px;
+    width: 620px;
   }
 
   .lottery-form__info input {
@@ -159,8 +184,7 @@
     order: 4;
     border: #e5e5e5 2px solid;
     background-color: #ffffff;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 620px;
   }
 
   .lottery-form__report {
@@ -180,6 +204,7 @@
     order: 6;
     display: flex;
     justify-content: space-between;
+    width: 620px;
   }
 
   .lottery-form__button {
@@ -188,7 +213,6 @@
 
   .lottery-form__legend {
     margin-top: 55px;
-    margin-right: 20px;
   }
 }
 
@@ -197,8 +221,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 132px;
-    margin-right: 132px;
   }
 
   .lottery-form__desc {
@@ -212,7 +234,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 0;
+    width: 437px;
   }
 
   .lottery-form__data input {
@@ -227,15 +249,10 @@
   .lottery-form__app {
     width: 431px;
     margin-left: 30px;
-    margin-right: 0;
   }
 
   .lottery-form__info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 936px;
-    margin: 0;
+    width: 940px;
   }
 
   .lottery-form__info input {
@@ -245,16 +262,13 @@
   }
 
   .lottery-form__achievements {
-    margin-left: 0;
-    margin-right: 0;
+    width: 940px;
   }
 
   .lottery-form__report {
-    width: 936px;
+    width: 940px;
     box-sizing: border-box;
     padding: 45px 60px 45px 60px;
-    margin-left: 0;
-    margin-right: 0;
   }
 
   .lottery-form__report textarea {
@@ -263,9 +277,7 @@
   }
 
   .lottery-form__wrapper {
-    width: 936px;
-    margin-left: 0;
-    margin-right: 0;
+    width: 940px;
   }
 
   .lottery-form__button,

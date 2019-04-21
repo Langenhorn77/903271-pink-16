@@ -2,30 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Фотоприложение Пинк. Фотографии</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<!--<header class="page-header">
-  <a href="index.html" class="page-header__logo-image">
-    <img src="http://placehold.it/75x22" alt="Логотип фотоприложения Пинк">
-  </a>
-  <nav class="main-nav">
-    <button class="main-nav__toggle" type="button">Открыть меню</button>
-    <ul class="main-nav__list site-menu">
-      <li class="site-menu__item"><a href="index.html">Главная</a></li>
-      <li class="site-menu__item site-menu__item&#45;&#45;active"><a href="photo.html">Фотографии</a></li>
-      <li class="site-menu__item"><a href="form.html">Конкурс</a></li>
-      <li class="site-menu__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
-    </ul>
-  </nav>
-</header>-->
-
-<div class="page-name">
-  <h1 class="page-name__content page-name__content--photo">Фотографии
-    пользователей</h1>
+<div class="page-wrapper">
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <a href="index.html" class="page-header__logo-image">
+      <img src="http://placehold.it/75x22" alt="Логотип фотоприложения Пинк"></a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list site-menu">
+          <li class="site-menu__item"><a href="index.html">Главная</a></li>
+          <li class="site-menu__item site-menu__item--active"><a href="photo.html">Фотографии</a></li>
+          <li class="site-menu__item"><a href="form.html">Конкурс</a></li>
+          <li class="site-menu__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="page-name">
+    <h1 class="page-name__content page-name__content--photo">Фотографии
+      пользователей</h1>
+  </div>
 </div>
 
 <main class="page-main">
@@ -38,7 +41,7 @@
       </p>
       <div class="photo-card photo-card--panorama">
         <a href="#"><img src="img/panorama-mobile@1x.jpg" alt="Панорама дня" class="photo-card__photo photo-card__photo--panorama" width="320" height="137"/></a>
-        <div class="photo-card__wrapper--panorama">
+        <div class="photo-card__wrapper">
           <blockquote class="photo-card__comment photo-card__comment--panorama">
             <cite class="photo-card__comment-name">Анна<span>(5 минут назад)</span></cite>
             <p class="photo-card__comment-text">
@@ -119,11 +122,24 @@
         <!--<input type="file" name="my-photo" id="my-photo">-->
         <img src="img/photo-road-mobile@1x.jpg" alt="Ваше фото">
         <div class="photo-post__wrapper">
-          <button class="photo-post__filter photo-post__filter--active" type="button"><img src="http://placehold.it/crop" alt="Обрезать"></button>
-          <button class="photo-post__filter" type="button"><img src="http://placehold.it/fill" alt="Заливка"/></button>
-          <button class="photo-post__filter" type="button"><img src="http://placehold.it/contrast" alt="Контраст"/></button>
-          <input class="photo-post__change" id="change" name="change" min="0" max="100" type="range"/>
-          <div class="photo-post__wrapper--button">
+          <div class="photo-post__filters">
+            <p>
+              <button class="photo-post__filter photo-post__filter--active" type="button">
+                <img src="http://placehold.it/crop" alt="Обрезать"></button>
+              <input class="photo-post__change photo-post__change--active" id="change_crop" name="change_crop" min="0" max="100" type="range"/>
+            </p>
+            <p>
+              <button class="photo-post__filter" type="button"><img src="http://placehold.it/fill" alt="Заливка"/>
+              </button>
+              <input class="photo-post__change" id="change_fill" name="change_fill" min="0" max="100" type="range"/>
+            </p>
+            <p>
+              <button class="photo-post__filter" type="button"><img src="http://placehold.it/contrast" alt="Контраст"/>
+              </button>
+              <input class="photo-post__change" id="change_contrast" name="change_contrast" min="0" max="100" type="range"/>
+            </p>
+          </div>
+          <div class="photo-post__buttons">
             <button class="photo-post__post btn" type="submit">Запостить</button>
             <button class="photo-post__cancel btn" type="reset">Отмена</button>
           </div>

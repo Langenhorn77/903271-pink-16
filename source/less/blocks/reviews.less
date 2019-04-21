@@ -3,6 +3,11 @@
   padding-top: 50px;
 }
 
+.reviews__wrapper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .reviews__list {
   list-style: none;
   text-align: center;
@@ -12,6 +17,9 @@
 .reviews__item blockquote {
   margin-left: auto;
   margin-right: auto;
+  width: 280px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .reviews__item cite {
@@ -24,4 +32,30 @@
 .reviews__item p {
   font-size: 14px;
   line-height: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__item blockquote {
+    width: 620px;
+  }
+
+  .reviews__item cite {
+    font-size: 20px;
+  }
+
+  .reviews__item p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__item blockquote {
+    width: 690px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .reviews__item cite {
+    font-size: 20px;
+  }
 }
