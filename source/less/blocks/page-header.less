@@ -1,3 +1,36 @@
 .page-header {
-  background-color: #283645;
+  height: 66px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  min-width: 280px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    height: 110px;
+  }
+
+  .page-header__wrapper {
+    min-width: 620px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    min-height: 110px;
+  }
+
+  .page-header__wrapper {
+    width: 940px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

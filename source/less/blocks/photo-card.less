@@ -3,8 +3,6 @@
   width: 280px;
   font-size: 14px;
   line-height: 24px;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 20px;
 }
 
@@ -33,4 +31,32 @@
   cursor: pointer;
   margin-left: 49px;
   margin-bottom: 30px;
+}
+
+.photo-card--panorama {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.photo-card__photo--panorama {
+  width: 100%;
+}
+
+.photo-card__wrapper {
+  background-color: #f2f2f2;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-card__wrapper {
+    width: 620px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-card__wrapper {
+    width: 940px;
+  }
 }
