@@ -1,0 +1,254 @@
+.buy {
+  width: 100%;
+  background-color: #f2f2f2;
+  padding-top: 90px;
+  padding-bottom: 31px;
+  position: relative;
+}
+
+.buy::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 320px;
+  height: 31px;
+  background-image: url("../../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.buy__wrapper {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  /*overflow: hidden;*/
+}
+
+.buy__features {
+  line-height: 30px;
+  border-collapse: collapse;
+}
+
+.buy__rate {
+  width: 280px;
+  height: 100px;
+  background-color: #283645;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  box-sizing: border-box;
+  border-left: 2px solid #e5e5e5;
+  border-right: 2px solid #e5e5e5;
+}
+
+.buy__rate--hidden {
+  /*display: none;*/
+  background-color: transparent;
+  border: none;
+}
+
+.buy__rate--hit::before {
+  content: "ХИТ";
+  position: absolute;
+  top: 0;
+  left: -2px;
+  width: 74px;
+  height: 73px;
+  background-image: url("../../img/bg-hit.svg");
+  background-size: 74px 73px;
+}
+
+.buy__name {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.buy__price {
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.buy__field {
+  width: 280px;
+  padding: 0;
+  box-sizing: border-box;
+  border-left: 2px solid #e5e5e5;
+  border-right: 2px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
+  background-color: #ffffff;
+}
+
+/*.buy__field--hidden {
+  display: none;
+}*/
+
+.buy__field__wrapper {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 280px;
+  height: 59px;
+  margin: 0;
+}
+
+.buy__field__text {
+  display: block;
+  width: 132px;
+  margin-left: 23px;
+  font-size: 14px;
+  text-transform: uppercase;
+  vertical-align: center;
+}
+
+.buy__field__icon--yes {
+  margin-top: 20px;
+  margin-right: 17px;
+}
+
+.buy__field__icon--no {
+  margin-right: 19px;
+  margin-top: 15px;
+}
+
+.buy__toggles {
+  margin-top: 38px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .buy {
+    padding-top: 90px;
+  }
+
+  .buy::before {
+    top: 0;
+    left: 0;
+    width: 660px;
+    height: 52px;
+    background-image: url("../../img/bg-triangle-white.svg");
+  }
+
+  .buy__wrapper {
+    width: 620px;
+  }
+
+  .buy__rate {
+    width: 153px;
+    height: 79px;
+  }
+
+  .buy__rate--hidden {
+    width: 153px;
+  }
+
+  .buy__name {
+    font-size: 16px;
+    margin-top: 4px;
+  }
+
+  .buy__price {
+    font-size: 18px;
+  }
+
+  .buy__field {
+    width: 153px;
+    height: 45px;
+    padding: 0;
+  }
+
+  .buy__field__wrapper {
+    justify-content: space-around;
+    width: 153px;
+    height: 45px;
+  }
+
+  .buy__field__wrapper .buy__field__text {
+    display: none;
+  }
+
+  .buy__field--hidden {
+    border-top: 2px solid #e5e5e5;
+  }
+
+  .buy__field__text {
+    text-transform: none;
+    margin: 0;
+    margin-left: 15px;
+  }
+
+  .buy__field__icon--yes {
+    margin: 0;
+    margin-top: 11px;
+  }
+
+  .buy__field__icon--no {
+    margin: 0;
+    margin-top: 9px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .buy {
+    padding-top: 140px;
+  }
+
+  .buy::before {
+    top: 0;
+    left: 0;
+    width: 960px;
+    height: 75px;
+    background-image: url("../../img/bg-triangle-white.svg");
+  }
+
+  .buy__wrapper {
+    width: 940px;
+  }
+
+  .buy__rate {
+    width: 234px;
+    height: 98px;
+  }
+
+  .buy__name {
+    font-size: 18px;
+    margin-top: -3px;
+  }
+
+  .buy__price {
+    font-size: 24px;
+  }
+
+  .buy__field__wrapper {
+    height: 59px;
+    width: 234px;
+  }
+
+  .buy__field {
+    width: 234px;
+    height: 61px;
+    padding: 0;
+  }
+
+  .buy__field__text {
+    font-size: 18px;
+    width: 150px;
+    margin-left: 20px;
+  }
+
+  .buy__field__icon--yes {
+    margin: 0;
+    margin-top: 21px;
+  }
+
+  .buy__field__icon--no {
+    margin: 0;
+    margin-top: 14px;
+  }
+}
