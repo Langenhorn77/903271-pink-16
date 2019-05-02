@@ -1,14 +1,27 @@
 .page-header {
-  height: 66px;
-  background-color: rgba(255, 255, 255, 0.1);
+  height: 68px;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .page-header__wrapper {
   display: flex;
   justify-content: space-between;
-  min-width: 280px;
-  margin-left: 20px;
-  margin-right: 20px;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-header__logo {
+  display: block;
+  margin-top: 22px;
+}
+
+.page-header__logo-icon-tablet {
+  display: none;
+}
+
+.page-header__logo-icon-desktop {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -17,7 +30,19 @@
   }
 
   .page-header__wrapper {
-    min-width: 620px;
+    width: 620px;
+  }
+
+  .page-header__logo {
+    margin-top: 27px;
+  }
+
+  .page-header__logo-icon-mobile {
+    display: none;
+  }
+
+  .page-header__logo-icon-tablet {
+    display: block;
   }
 }
 
@@ -32,5 +57,13 @@
     padding-right: 10px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .page-header__logo-icon-tablet {
+    display: none;
+  }
+
+  .page-header__logo-icon-desktop {
+    display: block;
   }
 }
