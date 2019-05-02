@@ -11,7 +11,7 @@
 <div class="page-wrapper">
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <svg class="page-header__logo-icon-mobile" width="75" height="23">
           <use xlink:href="#logo-pink-white-mobile"></use>
         </svg>
@@ -51,8 +51,7 @@
       <p class="lottery-form__desc">
         Поделитесь своей историей и получите
         шанс выиграть ценный приз — 1000
-        миль на вашу бонусную карту!
-        <span>Пожалуйста, заполните форму ниже:</span>
+        миль на вашу бонусную карту!<span>Пожалуйста, заполните форму ниже:</span>
       </p>
       <fieldset class="lottery-form__data">
         <p>
@@ -112,12 +111,13 @@
         </ul>
       </fieldset>
       <fieldset class="lottery-form__info">
+        <legend>Контактная информация</legend>
         <p>
-          <label for="your-tel">Номер телефона</label>
+          <label class="lottery-form__field lottery-form__field--tel" for="your-tel">Номер телефона</label>
           <input type="tel" id="your-tel" name="your-tel" placeholder="Номер, пожалуйста">
         </p>
         <p>
-          <label for="your-mail">Адрес почты</label>
+          <label class="lottery-form__field lottery-form__field--mail" for="your-mail">Адрес почты</label>
           <input type="email" id="your-mail" name="your-mail" placeholder="Введите почту *">
         </p>
       </fieldset>
@@ -152,14 +152,16 @@
       </fieldset>
       <div class="lottery-form__wrapper">
         <button type="submit" class="lottery-form__button">Отправить форму</button>
-        <p class="lottery-form__legend"><span>*</span> — обязательные поля</p></div>
+        <p class="lottery-form__legend lottery-form__legend--all"><span>*</span> — обязательные поля</p>
+        <p class="lottery-form__legend lottery-form__legend--desktop"><span>*</span> — обязательные для заполнения поля</p>
+      </div>
     </form>
   </section>
 </main>
 
 <footer class="page-footer">
   <div class="page-footer__logo">
-    <a>
+    <a href="index.html">
       <svg class="page-footer__logo-icon-mobile" width="147" height="40">
         <use xlink:href="#logo-pink-blue-mobile"></use>
       </svg>

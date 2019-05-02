@@ -13,14 +13,14 @@
   width: 210px;
 }
 
-.about-app__slogan--first {
+.about-app__text--first {
   width: 210px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 29px;
 }
 
-.about-app__slogan--second {
+.about-app__text--second {
   width: 210px;
   margin-right: auto;
   margin-left: auto;
@@ -34,15 +34,19 @@
   background-color: #f2f2f2;
   margin-right: auto;
   margin-left: auto;
-  position: relative;
 }
 
-.about-app__list::before {
+.about-app__wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.about-app__wrapper::before {
   content: "";
   position: absolute;
   top: -3px;
   left: 0;
-  width: 320px;
+  width: 100%;
   height: 31px;
   background-image: url("../../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
@@ -125,19 +129,25 @@
 }
 
 @media (min-width: @tablet-width) {
+  .about-app__wrapper::before {
+    width: 100%;
+    height: 57px;
+    background-image: url("../../img/bg-triangle-white.svg");
+  }
+
   .about-app__slogan {
     font-size: 40px;
     line-height: 48px;
     width: 600px;
   }
 
-  .about-app__slogan--first {
+  .about-app__text--first {
     width: 600px;
     margin-top: 18px;
     margin-bottom: 0;
   }
 
-  .about-app__slogan--second {
+  .about-app__text--second {
     width: 340px;
     margin-top: 0;
   }
@@ -145,12 +155,6 @@
   .about-app__list {
     padding-top: 82px;
     margin-bottom: 0;
-  }
-
-  .about-app__list::before {
-    width: 660px;
-    height: 57px;
-    background-image: url("../../img/bg-triangle-white.svg");
   }
 
   .about-app__item {
@@ -225,6 +229,13 @@
     background-color: #f2f2f2;
   }
 
+  .about-app__wrapper::before {
+    width: 100%;
+    height: 75px;
+    top: 0;
+    background-image: url("../../img/bg-triangle-white.svg");
+  }
+
   .about-app p {
     font-size: 18px;
     line-height: 30px;
@@ -239,12 +250,12 @@
     line-height: 60px;
   }
 
-  .about-app__slogan--first {
+  .about-app__text--first {
     width: 745px;
     margin-top: 35px;
   }
 
-  .about-app__slogan--second {
+  .about-app__text--second {
     width: 450px;
   }
 
@@ -254,13 +265,6 @@
     justify-content: space-between;
     padding: 0;
     width: 940px;
-  }
-
-  .about-app__list::before {
-    width: 960px;
-    height: 75px;
-    top: 0;
-    background-image: url("../../img/bg-triangle-white.svg");
   }
 
   .about-app__item {

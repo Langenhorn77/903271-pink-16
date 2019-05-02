@@ -12,7 +12,7 @@
 <div class="page-wrapper">
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <svg class="page-header__logo-icon-mobile" width="75" height="23">
           <use xlink:href="#logo-pink-white-mobile"></use>
         </svg>
@@ -24,14 +24,14 @@
         </svg>
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
           <svg class="main-nav__toggle-icon" width="50" height="24">
             <use xlink:href="#icon-menu-burger"></use>
           </svg>
         </button>
         <ul class="main-nav__list site-menu">
           <li class="site-menu__item"><a href="index.html">Главная</a></li>
-          <li class="site-menu__item site-menu__item--active"><a href="photo.html">Фотографии</a></li>
+          <li class="site-menu__item site-menu__item--active"><a>Фотографии</a></li>
           <li class="site-menu__item"><a href="form.html">Конкурс</a></li>
           <li class="site-menu__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
         </ul>
@@ -178,13 +178,13 @@
       <picture>
         <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg">
         <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg">
-        <img src="img/photo-road-mobile@1x.jpg" alt="Ваше фото" class="photo-card__photo"/>
+        <img src="img/photo-road-mobile@1x.jpg" alt="Ваше фото" class="photo-post__photo"/>
       </picture>
       <div class="photo-post__wrapper">
         <div class="photo-post__filters">
           <p>
             <button class="photo-post__filter photo-post__filter--active" type="button">
-              <svg class="photo-post__filter--crop" width="44" height="44">
+              <svg class="photo-post__icon photo-post__icon--crop" width="44" height="44">
                 <use xlink:href="#icon-editor-crop"></use>
               </svg>
             </button>
@@ -192,7 +192,7 @@
           </p>
           <p>
             <button class="photo-post__filter" type="button">
-              <svg class="photo-post__filter--fill" width="48" height="43">
+              <svg class="photo-post__icon photo-post__icon--fill" width="48" height="43">
                 <use xlink:href="#icon-editor-fill"></use>
               </svg>
             </button>
@@ -200,7 +200,7 @@
           </p>
           <p>
             <button class="photo-post__filter" type="button">
-              <svg class="photo-post__filter--contrast" width="32" height="32">
+              <svg class="photo-post__icon photo-post__icon--contrast" width="32" height="32">
                 <use xlink:href="#icon-editor-contrast"></use>
               </svg>
             </button>
@@ -216,9 +216,9 @@
   </section>
 </main>
 
-<footer class="page-footer page-footer--index">
+<footer class="page-footer">
   <div class="page-footer__logo">
-    <a>
+    <a href="index.html">
       <svg class="page-footer__logo-icon-mobile" width="147" height="40">
         <use xlink:href="#logo-pink-blue-mobile"></use>
       </svg>
