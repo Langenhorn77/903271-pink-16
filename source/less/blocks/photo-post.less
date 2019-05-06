@@ -7,6 +7,10 @@
   margin-right: auto;
 }
 
+.photo-post__photo {
+  height: 374px;
+}
+
 .photo-post__filters {
   display: flex;
   justify-content: space-between;
@@ -37,15 +41,23 @@
 
 .photo-post__change {
   display: none;
+  position: relative;
 }
 
 .photo-post__change--active {
   display: block;
+  visibility: hidden;
   position: absolute;
   top: 77px;
   left: -13px;
   width: 240px;
 }
+
+/*.photo-post__scale {
+  width: 240px;
+  height: 2px;
+  background-color: #283645;
+}*/
 
 .photo-post__buttons {
   margin-top: 89px;
@@ -55,12 +67,13 @@
   display: block;
   width: 280px;
   height: 55px;
-  padding: 17px;
+  padding: 15px;
   box-sizing: border-box;
 
   color: #d22856;
   background-color: transparent;
   font-size: 18px;
+  font-family: inherit;
   font-weight: 700;
   line-height: 18px;
   text-decoration: none;
@@ -74,13 +87,14 @@
   display: block;
   width: 280px;
   height: 55px;
-  padding: 17px;
+  padding: 15px;
   box-sizing: border-box;
 
   color: #283645;
   background-color: transparent;
   font-size: 18px;
   font-weight: 700;
+  font-family: inherit;
   line-height: 18px;
   text-decoration: none;
   border: 3px solid;
@@ -93,6 +107,10 @@
   .photo-post {
     width: 660px;
     padding: 57px 20px 50px 20px;
+  }
+
+  .photo-post__photo {
+    height: 400px;
   }
 
   .photo-post__development {
@@ -221,6 +239,7 @@
   .photo-post__post {
     width: 183px;
     margin: 0;
+    margin-left: 5px;
   }
 
   .photo-post__cancel {
@@ -231,6 +250,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 146px;
+    margin-top: 154px;
   }
 }
