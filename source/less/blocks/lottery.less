@@ -283,6 +283,7 @@
     width: 620px;
     min-height: 560px;
     margin: 40px 0 57px 0;
+    box-sizing: border-box;
   }
 
   .lottery-form__report {
@@ -343,7 +344,6 @@
   }
 
   .lottery-form__desc span {
-    display: none;
     width: 330px;
   }
 
@@ -369,9 +369,15 @@
   .lottery-form__info {
     width: 940px;
     margin-top: 0;
-    padding: 31px 58px 0 56px;
+    padding: 27px 58px 0 56px;
+    min-height: 170px;
+    margin-bottom: 15px;
+  }
+
+  .lottery-form__info-wrapper {
+    display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
   }
 
   .lottery-form__info p {
