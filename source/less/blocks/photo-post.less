@@ -30,34 +30,123 @@
   align-items: center;
   background-color: transparent;
   border: none;
-  width: 60px;
-  height: 60px;
+  width: 59px;
+  height: 59px;
 }
 
 .photo-post__filter svg {
   fill: #b5b9be;
 }
 
+.photo-post__filter--active svg {
+  fill: #d22856;
+}
+
 
 .photo-post__change {
   display: none;
   position: relative;
+  width: 100%;
+  margin: 6px 0;
+  -webkit-appearance: none;
 }
+
+.photo-post__change:focus {
+  outline: none;
+}
+
+.photo-post__change::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background: #283645;
+  border-radius: 1px;
+  border: 0.2px solid #010101;
+}
+
+.photo-post__change::-webkit-slider-thumb {
+  border: 2px solid #d32e5b;
+  height: 14px;
+  width: 14px;
+  border-radius: 7px;
+  background: #f2f2f2;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -6.2px;
+}
+
+.photo-post__change:focus::-webkit-slider-runnable-track {
+  background: #314355;
+}
+
+/*.photo-post__change::-moz-range-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #283645;
+  border-radius: 1px;
+  border: 0.2px solid #010101;
+}
+
+.photo-post__change::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 2px solid #d32e5b;
+  height: 14px;
+  width: 14px;
+  border-radius: 7px;
+  background: #f2f2f2;
+  cursor: pointer;
+}*/
+
+/*.photo-post__change::-ms-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+.photo-post__change::-ms-fill-lower {
+  background: #1f2935;
+  border: 0.2px solid #010101;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+.photo-post__change::-ms-fill-upper {
+  background: #283645;
+  border: 0.2px solid #010101;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+.photo-post__change::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 2px solid #d32e5b;
+  height: 14px;
+  width: 14px;
+  border-radius: 7px;
+  background: #f2f2f2;
+  cursor: pointer;
+}
+
+.photo-post__change:focus::-ms-fill-lower {
+  background: #283645;
+}
+
+.photo-post__change:focus::-ms-fill-upper {
+  background: #314355;
+}*/
 
 .photo-post__change--active {
   display: block;
-  visibility: hidden;
   position: absolute;
-  top: 77px;
-  left: -13px;
+  top: 84px;
+  left: -9px;
   width: 240px;
 }
-
-/*.photo-post__scale {
-  width: 240px;
-  height: 2px;
-  background-color: #283645;
-}*/
 
 .photo-post__buttons {
   margin-top: 89px;
