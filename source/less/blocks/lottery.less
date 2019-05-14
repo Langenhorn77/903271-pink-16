@@ -51,17 +51,26 @@
 .lottery-form__info input {
   min-width: 280px;
   box-sizing: border-box;
-  border: #e5e5e5 2px solid;
+  border: rgba(40, 54, 69, 0.1) 2px solid;
   height: 63px;
   margin-top: 6px;
   padding-left: 20px;
   padding-right: 20px;
+
+  &:hover {
+    border: rgba(40, 54, 69, 1) 2px solid;
+  }
+
+  &:focus {
+    border: rgba(210, 40, 86, 1) 2px solid;
+    outline: rgba(210, 40, 86, 1);
+  }
 }
 
 .lottery-form__data input::placeholder,
 .lottery-form__info input::placeholder,
 .lottery-form__report textarea::placeholder {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Tahoma", sans-serif;
   font-size: 18px;
   line-height: 30px;
 }
@@ -108,9 +117,18 @@
 .lottery-form__report textarea {
   width: 280px;
   height: 201px;
-  border: #e5e5e5 2px solid;
+  border: rgba(40, 54, 69, 0.1) 2px solid;
   box-sizing: border-box;
   padding: 15px 18px;
+
+  &:hover {
+    border: rgba(40, 54, 69, 1) 2px solid;
+  }
+
+  &:focus {
+    border: rgba(210, 40, 86, 1) 2px solid;
+    outline: rgba(210, 40, 86, 1);
+  }
 }
 
 .lottery-form__wrapper {
@@ -131,10 +149,23 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
   text-transform: uppercase;
   margin-top: 33px;
   margin-bottom: 21px;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+    color: rgba(255, 255, 255, 1);
+  }
 }
 
 .lottery-form__legend {
@@ -147,12 +178,12 @@
   width: 182px;
 }
 
-.lottery-form__legend--desktop {
-  display: none;
-}
-
 .lottery-form__legend span {
   color: #d22856;
+}
+
+.lottery-form__legend-hidden {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -252,7 +283,7 @@
     width: 60px;
     height: 60px;
     background-color: #e5e5e5;
-    background-image: url("../../img/icon-phone.svg");
+    background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 20px 19px;
@@ -270,7 +301,7 @@
     width: 60px;
     height: 60px;
     background-color: #e5e5e5;
-    background-image: url("../../img/icon-mail.svg");
+    background-image: url("../img/icon-mail.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 18px 13px;
@@ -345,6 +376,7 @@
 
   .lottery-form__desc span {
     width: 330px;
+    display: inline;
   }
 
   .lottery-form__data {
@@ -422,11 +454,8 @@
     width: 315px;
   }
 
-  .lottery-form__legend--all {
-    display: none;
-  }
-
-  .lottery-form__legend--desktop {
-    display: block;
+  .lottery-form__legend .lottery-form__legend-hidden {
+    display: inline;
+    color: #283645;
   }
 }

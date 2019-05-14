@@ -40,8 +40,16 @@
   width: 39px;
   height: 39px;
   box-sizing: border-box;
-  border: #e5e5e5 2px solid;
+  border: rgba(40, 54, 69, 0.1) 2px solid;
   background-color: #ffffff;
+
+  &:hover {
+    border: rgba(40, 54, 69, 1) 2px solid;
+  }
+
+  &:active {
+    border: rgba(210, 40, 86, 1) 2px solid;
+  }
 }
 
 .achievements__name:checked + label .checkbox-indicator {
@@ -51,7 +59,7 @@
   width: 39px;
   height: 39px;
   box-sizing: border-box;
-  background-image: url("../../img/icon-ok.svg");
+  background-image: url("../img/icon-ok.svg");
   background-repeat: no-repeat;
   background-size: 22px 16px;
   background-position: center;

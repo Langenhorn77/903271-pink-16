@@ -13,9 +13,22 @@
   background-color: rgba(0, 0, 0, 0.3);
   box-sizing: border-box;
   cursor: pointer;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
 }
 
 .slider__toggle--active {
   border: #283645 3px solid;
   background-color: #ffffff;
+
+  &:hover,
+  &:active {
+    background-color: #ffffff;
+  }
 }
