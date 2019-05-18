@@ -25,12 +25,10 @@
       </div>
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle main-nav__toggle--burger" type="button"><span class="visually-hidden">Открыть меню</span>
-          <svg class="main-nav__toggle-icon" width="50" height="24">
+          <svg class="main-nav__toggle-icon main-nav__toggle-icon-burger" width="50" height="24">
             <use xlink:href="#icon-menu-burger"></use>
           </svg>
-        </button>
-        <button class="main-nav__toggle main-nav__toggle--cross" type="button"><span class="visually-hidden">Открыть меню</span>
-          <svg class="main-nav__toggle-icon" width="24" height="24">
+          <svg class="main-nav__toggle-icon main-nav__toggle-icon-cross" width="24" height="24">
             <use xlink:href="#icon-menu-cross"></use>
           </svg>
         </button>
@@ -52,7 +50,7 @@
       <p class="download__slogan">Взгляните
         на жизнь
         иначе!</p>
-      <a href="https://www.apple.com/ru/itunes/" class="download__button btn">Скачать приложение</a>
+      <a href="https://www.apple.com/ru/itunes/" class="download__button">Скачать приложение</a>
       <div class="download__icons">
         <a href="https://itunes.apple.com/ru/developer/apple/id284417353?mt=12"><img src="img/logo-apple.svg" alt="Иконка Apple"></a>
         <a href="https://www.androeed.ru/android/programmy.html"><img src="img/logo-android.svg" alt="Иконка Android"></a>
@@ -120,108 +118,117 @@
         </li>
       </ul>
       <p class="reviews__toggles slider__toggles">
-        <button class="slider__toggle slider__toggle--active" type="button"><span class="visually-hidden">Слайд 1</span></button>
+        <button class="slider__toggle slider__toggle--active" type="button"><span class="visually-hidden">Слайд 1</span>
+        </button>
         <button class="slider__toggle" type="button"><span class="visually-hidden">Слайд 2</span></button>
         <button class="slider__toggle" type="button"><span class="visually-hidden">Слайд 3</span></button>
       </p>
       <button class="reviews__prev">
-        <svg class="reviews__icon" width="22" height="42"><use xlink:href="#icon-review-arrow-left"></use></svg><span class="visually-hidden">Предыдущий слайд</span>
+        <svg class="reviews__icon" width="22" height="42">
+          <use xlink:href="#icon-review-arrow-left"></use>
+        </svg>
+        <span class="visually-hidden">Предыдущий слайд</span>
       </button>
-      <button class="reviews__next"><svg class="reviews__icon" width="22" height="42"><use xlink:href="#icon-review-arrow-right"></use></svg><span class="visually-hidden">Следующий слайд</span></button>
+      <button class="reviews__next">
+        <svg class="reviews__icon" width="22" height="42">
+          <use xlink:href="#icon-review-arrow-right"></use>
+        </svg>
+        <span class="visually-hidden">Следующий слайд</span></button>
     </div>
   </section>
   <section class="buy">
     <div class="buy__wrapper slider">
       <h2 class="visually-hidden">Купить приложение</h2>
-          <table class="buy__features">
-            <tr>
-              <th class="buy__rate buy__rate--hidden"></th>
-              <th class="buy__rate" colspan="1">
-                <p class="buy__name">База</p>
-                <p class="buy__price">1,99 USD</p>
-              </th>
-              <th class="buy__rate buy__rate--hit" colspan="1">
-                <p class="buy__name">Стандарт</p>
-                <p class="buy__price">3,99 USD</p>
-              </th>
-              <th class="buy__rate" colspan="1">
-                <p class="buy__name">Анлим</p>
-                <p class="buy__price">9,99 USD</p>
-              </th>
-            </tr>
-            <tr>
-              <td class="buy__field buy__field--hidden">
-                <p class="buy__field-text">Розовый фильтр</p>
-              </td>
-              <td class="buy__field">
-                <div class="buy__field-wrapper">
-                  <p class="buy__field-text">Розовый фильтр</p>
-                  <img class="buy__field-icon buy__field-icon--yes" src="img/icon-yes.svg" width="31" height="21" alt="Присутствует">
-                </div>
-              </td>
-              <td class="buy__field">
-                <div class="buy__field-wrapper">
-                  <p class="buy__field-text">Розовый фильтр</p>
-                  <img class="buy__field-icon buy__field-icon--yes" src="img/icon-yes.svg" width="31" height="21" alt="Присутствует">
-                </div>
-              </td>
-              <td class="buy__field">
-                <div class="buy__field-wrapper">
-                  <p class="buy__field-text">Розовый фильтр</p>
-                  <img class="buy__field-icon buy__field-icon--yes" src="img/icon-yes.svg" width="31" height="21" alt="Присутствует">
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="buy__field buy__field--hidden">
-                <p class="buy__field-text">Смайлики</p>
-              </td>
-              <td class="buy__field">
-                <div class="buy__field-wrapper">
-                  <p class="buy__field-text">Смайлики</p>
-                  <img class="buy__field-icon buy__field-icon--no" src="img/icon-no.svg" width="27" height="26" alt="Отсутствует">
-                </div>
-              </td>
-              <td class="buy__field">
-                <div class="buy__field-wrapper">
-                  <p class="buy__field-text">Смайлики</p>
-                  <img class="buy__field-icon buy__field-icon--yes" src="img/icon-yes.svg" width="31" height="21" alt="Присутствует">
-                </div>
-              </td>
-              <td class="buy__field">
-                <div class="buy__field-wrapper">
-                  <p class="buy__field-text">Смайлики</p>
-                  <img class="buy__field-icon buy__field-icon--yes" src="img/icon-yes.svg" width="31" height="21" alt="Присутствует">
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="buy__field buy__field--hidden">
-                <p class="buy__field-text">Комментарии</p>
-              </td>
-              <td class="buy__field">
-                <div class="buy__field-wrapper">
-                  <p class="buy__field-text">Комментарии</p>
-                  <img class="buy__field-icon buy__field-icon--no" src="img/icon-no.svg" width="27" height="26" alt="Отсутствует">
-                </div>
-              </td>
-              <td class="buy__field">
-                <div class="buy__field-wrapper">
-                  <p class="buy__field-text">Комментарии</p>
-                  <img class="buy__field-icon buy__field-icon--no" src="img/icon-no.svg" width="27" height="26" alt="Отсутствует">
-                </div>
-              </td>
-              <td class="buy__field">
-                <div class="buy__field-wrapper">
-                  <p class="buy__field-text">Комментарии</p>
-                  <img class="buy__field-icon buy__field-icon--yes" src="img/icon-yes.svg" width="31" height="21" alt="Присутствует">
-                </div>
-              </td>
-            </tr>
-          </table>
+      <table class="buy__features">
+        <tr>
+          <th class="buy__rate buy__rate--hidden"></th>
+          <th class="buy__rate" colspan="1">
+            <p class="buy__name">База</p>
+            <p class="buy__price">1,99 USD</p>
+          </th>
+          <th class="buy__rate buy__rate--hit" colspan="1">
+            <p class="buy__name">Стандарт</p>
+            <p class="buy__price">3,99 USD</p>
+          </th>
+          <th class="buy__rate" colspan="1">
+            <p class="buy__name">Анлим</p>
+            <p class="buy__price">9,99 USD</p>
+          </th>
+        </tr>
+        <tr>
+          <td class="buy__field buy__field--hidden">
+            <p class="buy__field-text">Розовый фильтр</p>
+          </td>
+          <td class="buy__field">
+            <div class="buy__field-wrapper">
+              <p class="buy__field-text">Розовый фильтр</p>
+              <img class="buy__field-icon buy__field-icon--yes" src="img/icon-yes.svg" width="31" height="21" alt="Присутствует">
+            </div>
+          </td>
+          <td class="buy__field">
+            <div class="buy__field-wrapper">
+              <p class="buy__field-text">Розовый фильтр</p>
+              <img class="buy__field-icon buy__field-icon--yes" src="img/icon-yes.svg" width="31" height="21" alt="Присутствует">
+            </div>
+          </td>
+          <td class="buy__field">
+            <div class="buy__field-wrapper">
+              <p class="buy__field-text">Розовый фильтр</p>
+              <img class="buy__field-icon buy__field-icon--yes" src="img/icon-yes.svg" width="31" height="21" alt="Присутствует">
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="buy__field buy__field--hidden">
+            <p class="buy__field-text">Смайлики</p>
+          </td>
+          <td class="buy__field">
+            <div class="buy__field-wrapper">
+              <p class="buy__field-text">Смайлики</p>
+              <img class="buy__field-icon buy__field-icon--no" src="img/icon-no.svg" width="27" height="26" alt="Отсутствует">
+            </div>
+          </td>
+          <td class="buy__field">
+            <div class="buy__field-wrapper">
+              <p class="buy__field-text">Смайлики</p>
+              <img class="buy__field-icon buy__field-icon--yes" src="img/icon-yes.svg" width="31" height="21" alt="Присутствует">
+            </div>
+          </td>
+          <td class="buy__field">
+            <div class="buy__field-wrapper">
+              <p class="buy__field-text">Смайлики</p>
+              <img class="buy__field-icon buy__field-icon--yes" src="img/icon-yes.svg" width="31" height="21" alt="Присутствует">
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="buy__field buy__field--hidden">
+            <p class="buy__field-text">Комментарии</p>
+          </td>
+          <td class="buy__field">
+            <div class="buy__field-wrapper">
+              <p class="buy__field-text">Комментарии</p>
+              <img class="buy__field-icon buy__field-icon--no" src="img/icon-no.svg" width="27" height="26" alt="Отсутствует">
+            </div>
+          </td>
+          <td class="buy__field">
+            <div class="buy__field-wrapper">
+              <p class="buy__field-text">Комментарии</p>
+              <img class="buy__field-icon buy__field-icon--no" src="img/icon-no.svg" width="27" height="26" alt="Отсутствует">
+            </div>
+          </td>
+          <td class="buy__field">
+            <div class="buy__field-wrapper">
+              <p class="buy__field-text">Комментарии</p>
+              <img class="buy__field-icon buy__field-icon--yes" src="img/icon-yes.svg" width="31" height="21" alt="Присутствует">
+            </div>
+          </td>
+        </tr>
+      </table>
       <p class="buy__toggles slider__toggles">
         <button class="slider__toggle" type="button"><span class="visually-hidden">Слайд 1</span></button>
-        <button class="slider__toggle slider__toggle--active" type="button"><span class="visually-hidden">Слайд 2</span></button>
+        <button class="slider__toggle slider__toggle--active" type="button"><span class="visually-hidden">Слайд 2</span>
+        </button>
         <button class="slider__toggle" type="button"><span class="visually-hidden">Слайд 3</span></button>
       </p>
     </div>
@@ -249,6 +256,7 @@
         </li>
       </ul>
     </div>
+    <iframe src="https://yandex.ru/map-widget/v1/-/CCaGaAMm" width="1200" height="485" allowfullscreen></iframe>
   </section>
 </main>
 
@@ -266,27 +274,34 @@
   <div class="page-footer__social social">
     <ul class="social__list">
       <li class="social__item">
-        <a class="social__link social__link--twitter" href="#" aria-label="Страница Pink в Твиттере"><svg width="17.5" height="14.663">
-          <use xlink:href="#icon-twitter"></use>
-        </svg></a>
+        <a class="social__link social__link--twitter" href="#" aria-label="Страница Pink в Твиттере">
+          <svg width="17.5" height="14.663">
+            <use xlink:href="#icon-twitter"></use>
+          </svg>
+        </a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--facebook" href="#" aria-label="Страница Pink в Facebook"><svg width="8.6" height="19">
-          <use xlink:href="#icon-facebook"></use>
-        </svg></a>
+        <a class="social__link social__link--facebook" href="#" aria-label="Страница Pink в Facebook">
+          <svg width="8.6" height="19">
+            <use xlink:href="#icon-facebook"></use>
+          </svg>
+        </a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--youtube" href="#" aria-label="Страница Pink на Youtube"><svg width="14.6" height="14">
-          <use xlink:href="#icon-youtube"></use>
-        </svg></a>
+        <a class="social__link social__link--youtube" href="#" aria-label="Страница Pink на Youtube">
+          <svg width="14.6" height="14">
+            <use xlink:href="#icon-youtube"></use>
+          </svg>
+        </a>
       </li>
     </ul>
   </div>
   <div class="page-footer__copyright copyright">
     <p class="copyright__text">Разработано</p>
-    <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link" aria-label="HTML Academy"><svg width="27" height="34">
-      <use xlink:href="#logo-htmlacademy"></use>
-    </svg>
+    <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link" aria-label="HTML Academy">
+      <svg width="27" height="34">
+        <use xlink:href="#logo-htmlacademy"></use>
+      </svg>
     </a>
   </div>
 </footer>
@@ -349,11 +364,14 @@
       </g>
     </g>
   </symbol>
-  <symbol viewBox="0 0 23.867 23.867" id="icon-menu-cross"><path d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
+  <symbol viewBox="0 0 23.867 23.867" id="icon-menu-cross">
+    <path d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
   </symbol>
-  <symbol viewBox="0 0 21.706 41.719" id="icon-review-arrow-left"><path d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
+  <symbol viewBox="0 0 21.706 41.719" id="icon-review-arrow-left">
+    <path d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
   </symbol>
-  <symbol viewBox="0 0 21.706 41.719" id="icon-review-arrow-right"><path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
+  <symbol viewBox="0 0 21.706 41.719" id="icon-review-arrow-right">
+    <path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
   </symbol>
   <symbol viewBox="0 0 146.3 40.375" id="logo-pink-blue-mobile">
     <g>

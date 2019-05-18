@@ -42,14 +42,14 @@
   box-sizing: border-box;
   border: rgba(40, 54, 69, 0.1) 2px solid;
   background-color: #ffffff;
+}
 
-  &:hover {
-    border: rgba(40, 54, 69, 1) 2px solid;
-  }
+.achievements__name:hover + label .checkbox-indicator {
+  border: rgba(40, 54, 69, 1) 2px solid;
+}
 
-  &:active {
-    border: rgba(210, 40, 86, 1) 2px solid;
-  }
+.achievements__name:active + label .checkbox-indicator {
+  border: rgba(210, 40, 86, 1) 2px solid;
 }
 
 .achievements__name:checked + label .checkbox-indicator {
