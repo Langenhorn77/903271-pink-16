@@ -1,12 +1,18 @@
 .page-header {
-  height: 68px;
+  min-height: 68px;
+  background-color: #283645;
+}
+
+.page-header--menu-closed {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
 .page-header__wrapper {
   display: flex;
   justify-content: space-between;
-  width: 280px;
+  height: 55px;
+  padding-left: 20px;
+  width: 320px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -14,6 +20,19 @@
 .page-header__logo {
   display: block;
   margin-top: 22px;
+}
+
+.page-header__logo svg {
+  fill: #ffffff;
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    fill: #ffffff;
+    opacity: 0.3;
+  }
 }
 
 .page-header__logo-icon-tablet {
@@ -26,11 +45,12 @@
 
 @media (min-width: @tablet-width) {
   .page-header {
-    height: 110px;
+    min-height: 110px;
   }
 
   .page-header__wrapper {
-    width: 620px;
+    height: 95px;
+    width: 660px;
   }
 
   .page-header__logo {
@@ -49,14 +69,22 @@
 @media (min-width: @desktop-width) {
   .page-header {
     min-height: 110px;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
-  .page-header__wrapper {
-    width: 940px;
+  .page-header__content {
+    display: flex;
+    justify-content: space-between;
     padding-left: 10px;
     padding-right: 10px;
     margin-left: auto;
     margin-right: auto;
+    width: 940px;
+  }
+
+  .page-header__wrapper {
+    margin: 0;
+    padding: 0;
   }
 
   .page-header__logo-icon-tablet {

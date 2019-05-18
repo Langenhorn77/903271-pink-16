@@ -88,6 +88,7 @@
 
   .reviews__wrapper {
     position: relative;
+    width: 960px;
   }
 
   .reviews__wrapper::before {
@@ -97,7 +98,7 @@
     left: calc(50% - 39px);
     width: 79px;
     height: 63px;
-    background-image: url("../../img/icon-quotes.svg");
+    background-image: url("../img/icon-quotes.svg");
   }
 
   .reviews__item blockquote {
@@ -124,12 +125,10 @@
     position: absolute;
     cursor: pointer;
     top: 73px;
-    left: 10px;
-    width: 22px;
-    height: 41px;
+    left: 7px;
+    width: 30px;
+    height: 47px;
     background-color: transparent;
-    background-image: url("../../img/icon-review-arrow-left.svg");
-    opacity: 0.3;
     border: none;
   }
 
@@ -139,11 +138,22 @@
     cursor: pointer;
     top: 73px;
     right: 10px;
-    width: 22px;
-    height: 41px;
+    width: 30px;
+    height: 47px;
     background-color: transparent;
-    background-image: url("../../img/icon-review-arrow-right.svg");
-    opacity: 0.3;
     border: none;
+  }
+
+  .reviews__icon {
+    fill: #283645;
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
   }
 }

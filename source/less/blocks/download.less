@@ -41,9 +41,20 @@
   font-weight: 700;
   line-height: 18px;
   text-decoration: none;
+  text-align: center;
   border: 3px solid;
   border-radius: 30px;
   z-index: 3;
+
+  &:hover {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: rgba(210, 40, 86, 1);
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
 }
 
 .download__icons {
@@ -72,7 +83,7 @@
 .download__wrapper::after {
   content: "";
   position: absolute;
-  background-image: url("../../img/iphone-hand-mobile@1x.png");
+  background-image: url("../img/iphone-hand-mobile@1x.png");
   background-repeat: no-repeat;
   top: -315px;
   left: -20px;
@@ -81,7 +92,7 @@
   z-index: 0;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../../img/iphone-hand-mobile@2x.png");
+    background-image: url("../img/iphone-hand-mobile@2x.png");
     background-size: auto 100%;
   }
 }
@@ -90,9 +101,8 @@
   .download {
     background-color: transparent;
     margin-top: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 0;
+    padding: 0;
+    padding-top: 28px;
   }
 
   .download__wrapper {
@@ -105,12 +115,12 @@
     content: "";
     width: 660px;
     height: 545px;
-    background-image: url("../../img/iphone-hand-tablet@1x.png");
+    background-image: url("../img/iphone-hand-tablet@1x.png");
     left: -38px;
     top: 45px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../../img/iphone-hand-tablet@2x.png");
+      background-image: url("../img/iphone-hand-tablet@2x.png");
       background-size: auto 100%;
     }
   }
@@ -158,12 +168,12 @@
     content: "";
     width: 940px;
     height: 645px;
-    background-image: url("../../img/iphone-hand-desktop@1x.png");
+    background-image: url("../img/iphone-hand-desktop@1x.png");
     left: 15px;
     top: 70px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../../img/iphone-hand-desktop@2x.png");
+      background-image: url("../img/iphone-hand-desktop@2x.png");
       background-size: auto 100%;
     }
   }
