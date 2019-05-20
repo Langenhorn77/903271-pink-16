@@ -77,7 +77,7 @@
   box-sizing: border-box;
   padding-top: 6px;
   top: 0;
-  left: 50%;
+  right: calc(50% - 140px);
   background-color: #d22856;
 }
 
@@ -126,7 +126,7 @@
 
   .photo-card--panorama::before {
     top: 70px;
-    left: 500px;
+    right: 20px;
   }
 
   .photo-card__photo--panorama {
@@ -171,6 +171,7 @@
     width: 940px;
     height: 96px;
     box-sizing: border-box;
+    margin-top: -12px;
   }
 
   .photo-card {
@@ -188,10 +189,11 @@
   }
 
   .photo-card--panorama::before {
-    left: 810px;
+    right: calc(50% - 470px);
   }
 
   .photo-card__photo--panorama {
+    display: block;
     width: 100%;
     max-width: 1200px;
     height: 506px;
