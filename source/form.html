@@ -72,49 +72,51 @@
           <input type="text" id="your-patronym" name="your-patronym" placeholder="Ну и отчество тоже">
         </p>
       </fieldset>
-      <fieldset class="lottery-form__achievements achievements">
-        <legend>Ваши безбашенные
-          достижения в путешествии
-        </legend>
-        <ul class="achievements__list">
-          <li class="achievements__item achievements__item--selfie">
-            <input class="visually-hidden achievements__name" type="checkbox" name="selfie" id="selfie" checked>
-            <label for="selfie"><span class="checkbox-indicator"></span>
-              Сделал селфи с акулой
-            </label>
-          </li>
-          <li class="achievements__item achievements__item--beach">
-            <input class="visually-hidden achievements__name" type="checkbox" name="beach" id="beach" checked>
-            <label for="beach"><span class="checkbox-indicator"></span>
-              Обгорел на пляже
-            </label>
-          </li>
-          <li class="achievements__item achievements__item--norris">
-            <input class="visually-hidden achievements__name" type="checkbox" name="norris" id="norris">
-            <label for="norris"><span class="checkbox-indicator"></span>
-              Видел Чака Норриса
-            </label>
-          </li>
-          <li class="achievements__item achievements__item--souvenir">
-            <input class="visually-hidden achievements__name" type="checkbox" name="souvenir" id="souvenir">
-            <label for="souvenir"><span class="checkbox-indicator"></span>
-              Накупил сувениров
-            </label>
-          </li>
-          <li class="achievements__item achievements__item--tower">
-            <input class="visually-hidden achievements__name" type="checkbox" name="tower" id="tower" checked>
-            <label for="tower"><span class="checkbox-indicator"></span>
-              Удержал башню
-            </label>
-          </li>
-          <li class="achievements__item achievements__item--hotel">
-            <input class="visually-hidden achievements__name" type="checkbox" name="hotel" id="hotel">
-            <label for="hotel"><span class="checkbox-indicator"></span>
-              Разгромил отель
-            </label>
-          </li>
-        </ul>
-      </fieldset>
+      <div class="lottery-form__achievements-wrapper">
+        <fieldset class="lottery-form__achievements achievements">
+          <legend>Ваши безбашенные
+            достижения в путешествии
+          </legend>
+          <ul class="achievements__list">
+            <li class="achievements__item achievements__item--selfie">
+              <input class="visually-hidden achievements__name" type="checkbox" name="selfie" id="selfie" checked>
+              <label for="selfie"><span class="checkbox-indicator"></span>
+                Сделал селфи с акулой
+              </label>
+            </li>
+            <li class="achievements__item achievements__item--beach">
+              <input class="visually-hidden achievements__name" type="checkbox" name="beach" id="beach" checked>
+              <label for="beach"><span class="checkbox-indicator"></span>
+                Обгорел на пляже
+              </label>
+            </li>
+            <li class="achievements__item achievements__item--norris">
+              <input class="visually-hidden achievements__name" type="checkbox" name="norris" id="norris">
+              <label for="norris"><span class="checkbox-indicator"></span>
+                Видел Чака Норриса
+              </label>
+            </li>
+            <li class="achievements__item achievements__item--souvenir">
+              <input class="visually-hidden achievements__name" type="checkbox" name="souvenir" id="souvenir">
+              <label for="souvenir"><span class="checkbox-indicator"></span>
+                Накупил сувениров
+              </label>
+            </li>
+            <li class="achievements__item achievements__item--tower">
+              <input class="visually-hidden achievements__name" type="checkbox" name="tower" id="tower" checked>
+              <label for="tower"><span class="checkbox-indicator"></span>
+                Удержал башню
+              </label>
+            </li>
+            <li class="achievements__item achievements__item--hotel">
+              <input class="visually-hidden achievements__name" type="checkbox" name="hotel" id="hotel">
+              <label for="hotel"><span class="checkbox-indicator"></span>
+                Разгромил отель
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
       <fieldset class="lottery-form__info">
         <legend>Контактная информация</legend>
         <div class="lottery-form__info-wrapper">
@@ -128,31 +130,33 @@
           </p>
         </div>
       </fieldset>
-      <fieldset class="lottery-form__app application">
-        <legend>С каким приложением
-          путешествовали?
-        </legend>
-        <ul class="application__list">
-          <li class="application__item">
-            <input class="visually-hidden application__name" type="radio" name="pink" id="ios" checked>
-            <label for="ios"><span class="radio-indicator"></span>
-              Pink для iOS
-            </label>
-          </li>
-          <li class="application__item">
-            <input class="visually-hidden application__name" type="radio" name="pink" id="android">
-            <label for="android"><span class="radio-indicator"></span>
-              Pink на Android
-            </label>
-          </li>
-          <li class="application__item">
-            <input class="visually-hidden application__name" type="radio" name="pink" id="wp">
-            <label for="wp"><span class="radio-indicator"></span>
-              Windows Phone
-            </label>
-          </li>
-        </ul>
-      </fieldset>
+      <div class="lottery-form__app-wrapper">
+        <fieldset class="lottery-form__app application">
+          <legend>С каким приложением
+            путешествовали?
+          </legend>
+          <ul class="application__list">
+            <li class="application__item">
+              <input class="visually-hidden application__name" type="radio" name="pink" id="ios" checked>
+              <label for="ios"><span class="radio-indicator"></span>
+                Pink для iOS
+              </label>
+            </li>
+            <li class="application__item">
+              <input class="visually-hidden application__name" type="radio" name="pink" id="android">
+              <label for="android"><span class="radio-indicator"></span>
+                Pink на Android
+              </label>
+            </li>
+            <li class="application__item">
+              <input class="visually-hidden application__name" type="radio" name="pink" id="wp">
+              <label for="wp"><span class="radio-indicator"></span>
+                Windows Phone
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
       <fieldset class="lottery-form__report">
         <legend>Опишите свои эмоции</legend>
         <textarea name="report_us" id="report_us" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
