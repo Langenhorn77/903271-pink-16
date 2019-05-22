@@ -44,6 +44,7 @@
   opacity: 0.1;
   top: 128px;
   left: -49px;
+  z-index: 3;
 }
 
 .photo-post__filter svg {
@@ -69,9 +70,19 @@
   display: none;
   position: relative;
   width: 100%;
-  margin: 6px 0;
+  /*margin: 6px 0;*/
   appearance: none;
   background-color: #f2f2f2;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.photo-post__change--active {
+  display: block;
+  position: absolute;
+  top: 64px;
+  left: -9px;
+  width: 240px;
 }
 
 .photo-post__change::-webkit-slider-runnable-track {
@@ -102,57 +113,67 @@
   background: #314355;
 }
 
-/*.photo-post__change::-moz-range-track {
+.photo-post__change::-moz-range-track {
   width: 100%;
-  height: 2px;
+  height: 0;
   cursor: pointer;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   background: #283645;
   border-radius: 1px;
   border: 0.2px solid #010101;
+  padding: 0;
+}
+
+.photo-post__change--active::-moz-range-track {
+  height: 0;
+  padding: 0;
 }
 
 .photo-post__change::-moz-range-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   border: 2px solid #d32e5b;
-  height: 14px;
-  width: 14px;
+  height: 10px;
+  width: 10px;
   border-radius: 7px;
   background: #f2f2f2;
   cursor: pointer;
-}*/
 
-/*.photo-post__change::-ms-track {
+  &:active {
+    background-color: #d22856;
+  }
+}
+
+.photo-post__change::-ms-track {
   width: 100%;
-  height: 2px;
+  height: 0.2px;
   cursor: pointer;
   background: transparent;
   border-color: transparent;
   color: transparent;
+  border-width: 7px 0;
 }
 
 .photo-post__change::-ms-fill-lower {
   background: #1f2935;
-  border: 0.2px solid #010101;
+  border: 1px solid #010101;
   border-radius: 2px;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
 }
 
 .photo-post__change::-ms-fill-upper {
   background: #283645;
-  border: 0.2px solid #010101;
+  border: 1px solid #010101;
   border-radius: 2px;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
 }
 
 .photo-post__change::-ms-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   border: 2px solid #d32e5b;
-  height: 14px;
-  width: 14px;
+  height: 10px;
+  width: 10px;
   border-radius: 7px;
   background: #f2f2f2;
   cursor: pointer;
+
+  &:active {
+    background-color: #d22856;
+  }
 }
 
 .photo-post__change:focus::-ms-fill-lower {
@@ -161,18 +182,17 @@
 
 .photo-post__change:focus::-ms-fill-upper {
   background: #314355;
-}*/
+}
 
-.photo-post__change--active {
-  display: block;
-  position: absolute;
-  top: 84px;
-  left: -9px;
-  width: 240px;
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .photo-post__change--active {
+    top: 50px;
+    height: 100px;
+  }
 }
 
 .photo-post__buttons {
-  margin-top: 89px;
+  margin-top: 92px;
 }
 
 .photo-post__post {
@@ -268,7 +288,6 @@
   }
 
   .photo-post__filters p {
-    display: flex;
     width: 265px;
     height: 45px;
     margin: 0;
@@ -295,6 +314,7 @@
     opacity: 0.1;
     top: 56px;
     left: 3px;
+    z-index: 3;
   }
 
   .photo-post__icon--crop {
@@ -312,15 +332,23 @@
     height: 16px;
   }
 
-  .photo-post__change--active {
-    top: 15px;
-    left: 61px;
-  }
-
   .photo-post__change {
     display: block;
+    position: absolute;
+    top: 0;
+    left: 60px;
     width: 202px;
-    margin-left: -2px;
+  }
+
+  .photo-post__change--active {
+    top: 0;
+  }
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .photo-post__change {
+      top: -23px;
+      height: 100px;
+    }
   }
 
   .photo-post__buttons {
@@ -399,12 +427,15 @@
   }
 
   .photo-post__change {
+    top: 0;
+    left: 109px;
     width: 288px;
   }
 
-  .photo-post__change--active {
-    top: 24px;
-    left: 109px;
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .photo-post__change {
+      top: -11px;
+    }
   }
 
   .photo-post__post {
