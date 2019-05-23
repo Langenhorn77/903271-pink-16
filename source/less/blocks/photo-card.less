@@ -5,6 +5,13 @@
   line-height: 24px;
   margin-bottom: 22px;
   padding-bottom: 20px;
+  margin-top: 0;
+}
+
+@-moz-document url-prefix("") {
+  .photo-card {
+    margin-bottom: 24px;
+  }
 }
 
 .photo-card__photo {
@@ -56,12 +63,12 @@
 }
 
 .photo-card--panorama {
-  /*width: 100%;*/
   background-color: #ffffff;
   width: 320px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  padding-bottom: 0;
 }
 
 .photo-card--panorama::before {
@@ -95,7 +102,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: -18px;
-  /*padding-bottom: 20px;*/
+  padding-bottom: 21px;
 }
 
 @media (min-width: @tablet-width) {
@@ -174,6 +181,7 @@
     height: 96px;
     box-sizing: border-box;
     margin-top: -12px;
+    margin-bottom: 30px;
   }
 
   .photo-card {

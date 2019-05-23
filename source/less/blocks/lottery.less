@@ -69,6 +69,13 @@
   }
 }
 
+@-moz-document url-prefix("") {
+  .lottery-form__data input,
+  .lottery-form__info input {
+    padding-top: 14px;
+  }
+}
+
 .lottery-form__data input::placeholder,
 .lottery-form__info input::placeholder,
 .lottery-form__report textarea::placeholder {
@@ -152,6 +159,7 @@
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
+  margin-top: 3px;
 }
 
 .lottery-form__button {
@@ -391,10 +399,12 @@
     flex-wrap: wrap;
     width: 437px;
     margin-top: -6px;
+    padding-top: 16px;
   }
 
   .lottery-form__data p {
     margin-bottom: 47px;
+    margin-top: 0;
   }
 
   .lottery-form__app-wrapper {
@@ -406,7 +416,7 @@
     width: 435px;
     margin-left: 68px;
     margin-bottom: 37px;
-    height: 305px;
+    min-height: 307px;
   }
 
   .lottery-form__info {
@@ -421,6 +431,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .lottery-form__info p {
@@ -452,7 +463,7 @@
 
   .lottery-form__report textarea {
     width: 816px;
-    height: 126px;
+    height: 128px;
   }
 
   .lottery-form__wrapper {
